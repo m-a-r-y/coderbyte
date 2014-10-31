@@ -1,15 +1,21 @@
-var fruits = "apples";
+var fruits = "bananas";
 
 var up = function(a){
 var splitMe = a.split("");
-
-var storage = "";
+var vowels = ["a","e","i","o","u"];
+var storage = [];
 
     for (var i = 0; i < splitMe.length; i++){
-     storage += String.fromCharCode(splitMe[i].charCodeAt() +1);
+     storage[i] = String.fromCharCode(splitMe[i].charCodeAt() + 1);
+
+
+     if(vowels.indexOf(storage[i]) > 0 ){
+         storage[i] = storage[i].toUpperCase();
+     }
     }
 
-    return storage;
+    return storage.join("");
 };
 
 up(fruits);
+
