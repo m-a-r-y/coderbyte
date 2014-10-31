@@ -1,7 +1,7 @@
 var fact = function(num){
 var result = num;
 for (var i = 1; i < num; i++){
-     result = result * [i];
+     result = result * i;
     } return result;
 };
 
