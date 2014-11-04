@@ -7,5 +7,4 @@ var soup = function(str){
     return letter.join("");
 };
 
-
 soup("cat"); // 'act'
